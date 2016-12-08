@@ -17,7 +17,7 @@ describe('angularjs homepage project list', function() {
     it('elements project', function() {
         browser.get('https://angularjs.org');
         var projectList = element.all(by.repeater('project in projectList.projects'));
-             expect(projectList.count()).toEqual(12);
+             expect(projectList.count()).toEqual(0);
     });
 
     it('delete project', function() {
